@@ -17,6 +17,6 @@ public class ChromeTest {
         driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
         System.out.println(driver.getTitle().equals("Google"));
-        Assert.assertTrue("Page title is not correct", driver.getTitle().equals("Google"));
+        Assert.assertTrue("Page title is not correct", driver.getTitle().equals("Googaaale"));
     }
 }
