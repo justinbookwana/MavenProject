@@ -10,13 +10,14 @@ public class ChromeTest {
 
     @Test
     public void OpenBrowser() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\jcdeguzman\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        // System.setProperty("webdriver.chrome.driver","C:\\Users\\jcdeguzman\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
         System.out.println(driver.getTitle().equals("Google"));
-        Assert.assertTrue("Page title is not correct", driver.getTitle().equals("Googaaale"));
+        Assert.assertTrue("Page title is not correct", driver.getTitle().equals("Googggggle"));
     }
 }
